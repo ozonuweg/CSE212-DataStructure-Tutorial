@@ -5,7 +5,7 @@ This is a tutorial of some select data sctructures in Python. The only pre-requi
 
 
 We will be convering the following data structures in this tutorial:
-- Queues
+- [Queues](2.queue.md)
 - Sets
 - Trees
 
