@@ -13,7 +13,7 @@ problem_queue.put(5)
 problem_queue.put(70)
 problem_queue.put(14)
 
-# Return Boolean for Full Queue
+# Return Boolean for Full Queue.
 print("\nIs the queue Full? ", problem_queue.full())
 
 # Removing element from queue twice
