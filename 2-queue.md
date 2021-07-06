@@ -12,7 +12,7 @@ Python Code to implement this: my_queue.append(value)
 
 
 ## Dequeue
-This operation removes an item from the queue. The items are popped in the same order in which they are pushed or added (FIFO). If the queue is empty, then it is said to be an Underflow condition – Time Complexity : O(1)\
+This operation removes an item from the queue. The items are popped in the same order in which they are pushed or added (FIFO). If the queue is empty, then it is said to be an Underflow condition – Time Complexity : O(n). Using a Python list, dequeue is O(n) since every item must be moved. \
 Python Code to implement this: 
 value = my_queue[0]\
 del my_queue[0]\
@@ -24,17 +24,21 @@ value = my_queue.pop(0)
 
 
 ## Queues in Python
-Queue is built-in module of Python which is used to implement a queue.
+Queue is module of Python which is used to implement a queue. It is not a built-in type but is available in a standard library. We could access it using
+```
+from queue import Queue
+```
 There are various functions available in this module: 
- 
-- maxsize – Number of items allowed in the queue.
-- empty() – Return True if the queue is empty, False otherwise.
-- full() – Return True if there are maxsize items in the queue. If the queue was initialized with maxsize=0 (the default), - then full() never returns True.
-- get() – Remove and return an item from the queue. If queue is empty, wait until an item is available.
-- get_nowait() – Return an item if one is immediately available, else raise QueueEmpty.
-- put(item) – Put an item into the queue. If the queue is full, wait until a free slot is available before adding the item.
-- put_nowait(item) – Put an item into the queue without blocking. If no free slot is immediately available, raise QueueFull.
-- qsize() – Return the number of items in the queue.
+ Module            | Description                                                                                                  |
+-------------------|--------------------------------------------------------------------------------------------------------------|
+| maxsize          | Number of items allowed in the queue.                                                                        |
+| empty()          | Return True if the queue is empty, False otherwise.                                                          |
+| full()           | Return True if there are maxsize items in the queue. If the queue was initialized with maxsize=0 (the default), - then full() never returns True.|
+| get()            | Remove and return an item from the queue. If queue is empty, wait until an item is available.                |
+| get_nowait()     | Return an item if one is immediately available, else raise QueueEmpty.                                       |
+| put(item)        | Put an item into the queue. If the queue is full, wait until a free slot is available before adding the item.|
+| put_nowait(item) | Put an item into the queue without blocking. If no free slot is immediately available, raise QueueFull.      |
+| qsize()          | Return the number of items in the queue.                                                                     |
 
 
 
