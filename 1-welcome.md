@@ -6,7 +6,7 @@ This is a tutorial of some select data sctructures in Python. The only pre-requi
 
 We will be convering the following data structures in this tutorial:
 - [Queues](2.queue.md)
-- Sets
+- [Sets](3-sets.md)
 - Trees
 
 Each tutorial will contain an overview of the driving principles behind the data structure, common uses, efficiency metrics, instructions for implementation in Python, an example of its use, and a problem for the reader to solve.
