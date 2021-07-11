@@ -43,7 +43,8 @@ We can create a set by:
 We can get the length of a set by using the len function:
 ```
 len(set_name)
-```
+```	
+The Time Complexity is O(1) - Performance of returning the size of the set
 ![Getting Started](set_length.jpeg)\
 Image credit: https://geeksforgeeks.org/
 
@@ -53,7 +54,7 @@ Image credit: https://geeksforgeeks.org/
 
 
 ## Adding items in a set
-- To add one item to a set use the add() method.
+- To add one item to a set use the add() method. The Time Complexity is O(1) - Performance of hashing the value (assuming good conflict resolution)
 ```
 sample_set = {"apple", "banana", "cherry"}
 
@@ -82,7 +83,7 @@ This will give you:
 <br>
 
 ## Removing items from a set
-To remove an item in a set, use the remove(), or the discard() method. If the item to remove does not exist, remove() will raise an error while discard() will do nothing.
+To remove an item in a set, use the remove(), or the discard() method. If the item to remove does not exist, remove() will raise an error while discard() will do nothing. The Time Complexity is O(1) - Performance of hashing the value (assuming good conflict resolution)
 ```
 # with remove() method
 sample_set = {'yam', 'green', 'red'}
