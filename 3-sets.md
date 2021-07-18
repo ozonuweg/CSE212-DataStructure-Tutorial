@@ -4,8 +4,8 @@ Set is one of 4 built-in data types in Python used to store collections of data.
 It is important to note that a set is a collection which is both unordered and unindexed. They are also constrained to have no duplicates. Once a set is created, you cannot change its items, but you can add new items.
 They are written with curly brackets: '{}'.
 
-![Getting Started](python-sets.jpeg)\
-Image credit: pynative.com
+![Getting Started](Python-Sets.png)\
+Image credit: www.educba.com
 
 <br><br>
 
